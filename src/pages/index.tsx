@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import axios from 'axios';
 
 const Home: NextPage = () => {
   return (
@@ -6,6 +7,12 @@ const Home: NextPage = () => {
     Labse
   </h1>
   )
+}
+
+export const getServerSideProps = async () => {
+  const response = await axios.get(`http://localhost:3000/api/post`);
+
+
 }
 
 export default Home
