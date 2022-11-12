@@ -7,7 +7,7 @@ import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
 import { GoogleLogin, GoogleLogout  } from 'react-google-login';
 
-import Logo from '../utils/labse-logo.png'
+import Logo from '../../public/labse-logo.png'
 
 const Navbar = () => {
   return (
