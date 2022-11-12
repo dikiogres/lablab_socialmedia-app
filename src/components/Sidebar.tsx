@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { GoogleLogin } from 'react-google-login';
 import { AiFillHome, AiOutlineMenu } from 'react-icons/ai';
 import { ImCancelCircle } from 'react-icons/im';
+import Discover from './Sidebar/Discover';
+import SuggestedAccount from './Sidebar/SuggestedAccount';
+import Footer from './Sidebar/Footer';
 
 const Sidebar = () => {
 
@@ -62,9 +65,9 @@ const Sidebar = () => {
             </div>
           )}
 
-          {/* <Discover/>
-          <SuggestedAccounts/>
-          <Footer/> */}
+          <Discover/>
+          <SuggestedAccount/>
+          <Footer/>
         </div>
       )}
     </div>
