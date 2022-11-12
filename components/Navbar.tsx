@@ -7,14 +7,20 @@ import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
 import { GoogleLogin, GoogleLogout  } from 'react-google-login';
 
+import Logo from '../utils/labse-logo.png'
+
 const Navbar = () => {
   return (
-    <div>
-        <Link>
-            <Image
-                className="cursor-pointer"
-                
-            />
+    <div className="w-full justify-between items-center border-b-2 border-gray-200 py-2  px-4">
+        <Link href="/">
+            <div className="w-[100px] md:w-[130px] md:h-[30px] h-[38px]">
+                <Image
+                    className="cursor-pointer"
+                    src={Logo}
+                    alt="Labse"
+                    layout="responsive"
+                />
+            </div>
         </Link>
     </div>
   )
